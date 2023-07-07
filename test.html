@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Mall Preloader</title>
+    <style>
+        /* CSS for preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .preloader-text {
+            font-size: 24px;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-text">Loading...</div>
+    </div>
+
+    <!-- Your shopping mall content here -->
+    <div>
+        <!-- Add your shopping mall elements -->
+    </div>
+
+    <script>
+        // JavaScript to hide the preloader once the page is fully loaded
+        window.addEventListener('load', function() {
+            var preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        });
+    </script>
+</body>
+</html>
